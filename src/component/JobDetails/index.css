@@ -1,0 +1,211 @@
+.job-details-main-container {
+  width: 90%;
+  margin-inline: auto;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+.job-details-card {
+  margin-bottom: 5em;
+}
+.job-details-container {
+  background-color: #000;
+  min-height: 100vh;
+}
+
+/* ------------- Description Container ---------------- */
+.desc-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.visit-link {
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 2.3rem;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+
+  display: flex;
+  align-items: center;
+}
+
+.external-link-icon {
+  margin-left: 0.5em;
+}
+
+/* ------------- Skills Container ------------------ */
+.skills-container {
+  margin-bottom: 2em;
+}
+.skills-ul-list-container {
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 1.5em;
+}
+.skills-list-container {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 8px;
+
+  background-color: #475569;
+}
+
+.tech-skills-img {
+  width: 50px;
+  margin-right: 1.3em;
+}
+
+.skills-para {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ----------------- Life at Company Container ------------- */
+.life-at-company-container {
+  margin-bottom: 2em;
+}
+
+.life-at-typo-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.job-details-life-img {
+  grid-column: 3;
+  border-radius: 8px;
+  min-width: 280px;
+  width: 100%;
+}
+
+.common-para {
+  grid-column: 1 / span 2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ----------------- Similar Jobs Container ----------------- */
+.similar-jobs-heading {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+.similar-jobs-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+@media all and (max-width: 918px) {
+  .similar-jobs-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* ------------- Skills Container ------------------ */
+  .skills-container {
+    margin-bottom: 2em;
+  }
+  .skills-ul-list-container {
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+  .skills-list-container {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-radius: 8px;
+
+    background-color: #475569;
+  }
+
+  .tech-skills-img {
+    width: 50px;
+    margin-right: 1.3em;
+  }
+
+  .skills-para {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  /* ----------------- Life at Company Container ------------- */
+  .life-at-company-container {
+    margin-bottom: 2em;
+  }
+
+  .life-at-typo-img {
+    grid-template-columns: 1fr;
+    gap: 0;
+    row-gap: 2em;
+  }
+
+  .job-details-life-img {
+    grid-column: 1;
+    border-radius: 8px;
+    min-width: 100%;
+    max-width: 400px;
+  }
+
+  .common-para {
+    grid-column: 1 / span 2;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /* ----------------- Similar Jobs Container ----------------- */
+  .similar-jobs-heading {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+  .similar-jobs-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  /* ------------- Description Container ---------------- */
+  .visit-link {
+    font-size: 2rem;
+    margin-bottom: 0.7em;
+  }
+  /* ------------- Skills Container ------------------ */
+
+  .tech-skills-img {
+    width: 30px;
+    margin-right: 1em;
+  }
+  .skills-para {
+    font-size: 1.4rem;
+  }
+
+  /* ----------------- Life at Company Container ------------- */
+
+  .life-at-company-container {
+    margin-bottom: 1em;
+  }
+
+  .common-para {
+    grid-column: 1 / span 2;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* ----------------- Similar Jobs Container ----------------- */
+
+  .similar-jobs-heading {
+    font-size: 2.4rem;
+    margin-bottom: 0.7em;
+  }
+}

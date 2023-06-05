@@ -1,0 +1,33 @@
+.bg-not-found-container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-responsive {
+  color: #fff;
+  text-align: center;
+  width: 92%;
+  margin-inline: auto;
+}
+.not-found-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0.8em 0;
+}
+.not-found-para {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.not-found-img {
+  display: inline-block;
+  width: 80%;
+}
+
+@media all and (min-width: 650px) {
+  .not-found-img {
+    display: inline-block;
+    width: 400px;
+  }
+}
